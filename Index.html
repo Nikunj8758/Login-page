@@ -98,6 +98,15 @@
         /* transform: scale(.9); */
         background-image: linear-gradient(to right,#08b2cc,#0793de,#076fde);
     }
+    p a{
+        font-size: 1.1rem;
+        color: #08b2cc;
+        transition: all 50ms linear;
+    }
+    p a:hover{
+        color: #dea807;
+        
+    }
     @media screen and (max-width:500px) {
 
         .main{
@@ -121,11 +130,14 @@
 
 </style>
 <body>
-    <div class="main">
-        <h1>Login</h1>
-        <input type="email" name="Email-id" id="email" placeholder="username or email" required>
-        <input type="password" name="password" id="password" placeholder="Password" required>
-        <button type="submit">Submit</button>
-    </div>
+    <form action="#">
+        <div class="main">
+            <h1>Login</h1>
+            <input type="email" name="Email-id" id="email" placeholder="username or email" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+            <p><a href="#">Forgot your Password</a></p>
+        </div>
+    </form>
 </body>
 </html>

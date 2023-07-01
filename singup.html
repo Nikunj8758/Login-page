@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Singup</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
@@ -88,7 +88,7 @@
     }
     .button:active{
         background-color: #076fde;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
     .button:hover{
         /* transform: scale(.9); */
@@ -116,15 +116,17 @@
 
 </style>
 <body>
-    <div class="main">
-        <h1>Login</h1>
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <input type="text" name="username" id="username" placeholder="Username" required>
-        <input type="number" name="Mo.NO." id="Number" placeholder="10 Digit Mo.No" >
-        <input type="date" name="BirthDate" id="Date">
-        <input type="email" name="Email-id" id="email" placeholder="Email" required>
-        <input type="password" name="password" id="password" placeholder="Password " required>
-        <input type="submit" value="Submit" class="button">
-    </div>
+    <form action="#">
+        <div class="main">
+            <h1>Login</h1>
+            <input type="text" name="name" id="name" placeholder="Name" required >
+            <input type="text" name="username" id="username" placeholder="Username" required minlength="6" maxlength="10">
+            <input type="text" name="Mo.NO." id="Number" placeholder="10 Digit Mo.No" minlength="10" maxlength="10">
+            <input type="date" name="BirthDate" id="Date" >
+            <input type="email" name="Email-id" id="email" placeholder="Email" required>
+            <input type="password" name="password" id="password" placeholder="Password " required minlength="6">
+            <input type="submit" value="Submit" class="button">
+        </div>
+    </form>
 </body>
 </html>
